@@ -1,7 +1,7 @@
 {
   "name": "Ethyr Tools",
   "application": "ethyr",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "private": false,
   "published": true,
   "aliases": [
