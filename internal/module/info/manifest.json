@@ -1,0 +1,85 @@
+{
+  "name": "Ethyr Tools",
+  "application": "ethyr",
+  "version": "0.0.1",
+  "private": false,
+  "published": true,
+  "aliases": [
+    "ethyr"
+  ],
+  "slug": "kubex-ethyr",
+  "repository": "https://github.com/kubex-ecosystem/ethyr",
+  "homepage": "https://github.com/kubex-ecosystem/ethyr",
+  "documentation_url": "https://github.com/kubex-ecosystem/ethyr",
+  "support_url": "https://github.com/kubex-ecosystem/ethyr",
+  "description": "Ethyr Tools - Ethyr is a powerful command-line utility designed to streamline and enhance your development workflow. With Ethyr, you can effortlessly manage your projects, automate tasks, and boost productivity through a suite of intuitive commands and features.",
+  "platform": "go",
+  "type": "executable+library",
+  "main": "cmd/main.go",
+  "go_version": "1.26.3",
+  "go_toolchain": {
+    "min": "1.23",
+    "max": "1.26"
+  },
+  "bin": "ethyr",
+  "author": "Rafael Mori <faelmori@live.com>",
+  "organization": "kubex-ecosystem",
+  "license": "MIT",
+  "tags": [
+    "tools",
+    "development",
+    "automation",
+    "kubex module"
+  ],
+  "keywords": [
+    "ethyr",
+    "kubex",
+    "tool",
+    "golang",
+    "devops",
+    "automation",
+    "management",
+    "command-line"
+  ],
+  "platforms": [
+    "linux/amd64",
+    "linux/arm64",
+    "darwin/amd64",
+    "darwin/arm64",
+    "windows/amd64",
+    "windows/386"
+  ],
+  "dependencies": [
+    "tar",
+    "gzip",
+    "curl",
+    "git",
+    "zip",
+    "unzip",
+    "jq"
+  ],
+  "scripts": {
+    "install": "make install",
+    "build": "make build",
+    "build:dev": "make build-dev",
+    "test": "make test",
+    "lint": "make lint",
+    "clean": "make clean",
+    "docs:build": "make build-docs",
+    "docs:serve": "make serve-docs"
+  },
+  "examples": [
+    {
+      "description": "Install Kubex Tools - Kbx",
+      "code": "kubex module install kbx"
+    },
+    {
+      "description": "View logs from all applications",
+      "code": "kbx view --all"
+    },
+    {
+      "description": "Search logs for a specific keyword",
+      "code": "kbx search --keyword 'error'"
+    }
+  ]
+}
